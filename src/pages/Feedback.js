@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 
 export default class Feedback extends Component {
   render() {
-    return <div></div>;
+    return (
+      <div>
+        <h1> Feedback Page </h1>
+      </div>
+    );
   }
 }
