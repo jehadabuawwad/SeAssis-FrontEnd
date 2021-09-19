@@ -1,6 +1,5 @@
-import React, { Component } from "react";
-import RoadServiceContent from "../components/RoadServiceContent";
-import RoadServiceForm from "../components/RoadServiceForm";
+import React, { Component } from 'react';
+
 // import axios from "axios";
 class RoadServices extends Component {
   constructor(props) {
@@ -17,7 +16,7 @@ class RoadServices extends Component {
       Pesron_Addres: e.target.personAddress.value,
       Pesron_Phone: e.target.personPhone.value,
     };
-    console.log("helpbody", helpBody);
+    console.log('helpbody', helpBody);
     // axios
     //   .post(`${process.env.REACT_APP_SERVER}/services`, helpBody)
     //   .then((createdService) => {
@@ -26,7 +25,11 @@ class RoadServices extends Component {
     //   });
   };
   render() {
-    return <div><h1> Road Services Page </h1></div>;
+    return (
+      <div>
+        <h1> Road Services Page </h1>
+      </div>
+    );
   }
 }
 export default RoadServices;
