@@ -8,27 +8,27 @@ export default class HomeSlider extends Component {
           <Carousel.Item>
             <img
               className='d-block w-100'
-              src='https://p1.pxfuel.com/preview/124/583/785/auto-accident-car-accident-traffic-accident-fire-exercise.jpg'
+              src='https://www.picpedia.org/highway-signs/images/help.jpg'
               alt='First slide'
               fluid
             />
             <Carousel.Caption>
-              <h5 style={{ color: 'white' }}>First slide label</h5>
+              <h1 style={{ color: 'white' }}>Road Service</h1>
               <p style={{ color: 'white' }}>
-                Nulla vitae elit libero, a pharetra augue mollis interdum.
+                Get help on the Road
               </p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img
               className='d-block w-100'
-              src='https://upload.wikimedia.org/wikipedia/commons/9/9d/Busy_Bees_Cleaning_Services.jpg'
+              src='https://service-lux.fr/wp-content/uploads/2021/06/55-1.jpg'
               alt='Second slide'
             />
             <Carousel.Caption>
-              <h5 style={{ color: 'Gray' }}>Second slide label</h5>
-              <p style={{ color: 'Gray' }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              <h1 style={{ color: 'white' }}>Home Service</h1>
+              <p style={{ color: 'white' }}>
+               Get help on your House
               </p>
             </Carousel.Caption>
           </Carousel.Item>
