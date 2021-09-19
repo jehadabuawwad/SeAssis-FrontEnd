@@ -20,7 +20,6 @@ export default class AboutUsGrid extends Component {
                   <div class='content'>
                     <i class='fab fa-python'></i>
                     <Image
-                     
                       className='d-block w-100'
                       src={JehadImage}
                       alt='RoadService'
@@ -28,7 +27,9 @@ export default class AboutUsGrid extends Component {
                     />
                     <h3>Team Leader</h3>
                     <p>Jehad Abu Awwad</p>
-                    <a href='https://www.linkedin.com/in/jehadabuawwad/'>Profile</a>
+                    <a href='https://www.linkedin.com/in/jehadabuawwad/'>
+                      Profile
+                    </a>
                   </div>
                 </div>
               </div>
@@ -48,7 +49,9 @@ export default class AboutUsGrid extends Component {
                     />
                     <h3>First Member</h3>
                     <p>Samah Hamed</p>
-                    <a href='https://www.linkedin.com/in/samah-hamed-948579171/'>Profile</a>
+                    <a href='https://www.linkedin.com/in/samah-hamed-948579171/'>
+                      Profile
+                    </a>
                   </div>
                 </div>
               </div>
@@ -68,7 +71,9 @@ export default class AboutUsGrid extends Component {
                     />
                     <h3>Second Member</h3>
                     <p>Ibrahim Bader</p>
-                    <a href='https://www.linkedin.com/in/ibrahim-bader-35aa09164/'>Profile</a>
+                    <a href='https://www.linkedin.com/in/ibrahim-bader-35aa09164/'>
+                      Profile
+                    </a>
                   </div>
                 </div>
               </div>
@@ -88,7 +93,9 @@ export default class AboutUsGrid extends Component {
                     />
                     <h3>Third Member</h3>
                     <p>Ehab Ahmad</p>
-                    <a href='https://www.linkedin.com/in/ehab-ahmad-748848162/'>Profile</a>
+                    <a href='https://www.linkedin.com/in/ehab-ahmad-748848162/'>
+                      Profile
+                    </a>
                   </div>
                 </div>
               </div>
@@ -108,7 +115,9 @@ export default class AboutUsGrid extends Component {
                     />
                     <h3>Fourth Member</h3>
                     <p>Ahmad AbuTaifor</p>
-                    <a href='https://www.linkedin.com/mwlite/in/ahmad-abuteifor-465647216'>Profile</a>
+                    <a href='https://www.linkedin.com/mwlite/in/ahmad-abuteifor-465647216'>
+                      Profile
+                    </a>
                   </div>
                 </div>
               </div>
@@ -128,7 +137,9 @@ export default class AboutUsGrid extends Component {
                     />
                     <h3>Fifth Member</h3>
                     <p>Gharam</p>
-                    <a href='https://www.linkedin.com/in/gharam-alessa-4449901b9/'>Profile</a>
+                    <a href='https://www.linkedin.com/in/gharam-alessa-4449901b9/'>
+                      Profile
+                    </a>
                   </div>
                 </div>
               </div>
