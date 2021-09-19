@@ -11,7 +11,7 @@ export default class HomeGrid extends Component {
     return (
       <Container>
         <Row>
-          <Col md={{ span: 6, offisite: 3 }}>
+          <Col md={{ span: 6, offset: 0 }}>
             <div class='card'>
               <div class='box'>
                 <div class='content'>
@@ -25,14 +25,14 @@ export default class HomeGrid extends Component {
                   <h3>Road Service</h3>
                   <p>
                     If You need a guide or help while your traveling by your car
-                    or if you lost in the road and you need some fuel or food.
+                    or if you lost in the road and you need some fuel or food
                   </p>
                   <a href='/RoadServices'>Read More</a>
                 </div>
               </div>
             </div>
           </Col>
-          <Col md={{ span: 6, offisite: 3 }}>
+          <Col md={{ span: 6, offset: 0 }}>
             <div class='card'>
               <div class='box'>
                 <div class='content'>
