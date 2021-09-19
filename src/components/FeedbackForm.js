@@ -8,11 +8,15 @@ export default class FeedbackForm extends Component {
       <Container>
         <Row>
           <Col md={{ span: 8, offset: 2 }}>
-            <Form>
-              <Form.Group className='mb-3' controlId='formBasicEmail'>
+            <Form onSubmit={this.props.handelCreateFeedback}>
+              <Form.Group className='mb-3'>
+                <Form.Label>Name</Form.Label>
+                <Form.Control name='name' placeholder='Enter Your Name' />
+              </Form.Group>
+              <Form.Group className='mb-3' >
                 <Form.Label>Email address</Form.Label>
                 <Form.Control
-                  type='email'
+                  name='email'
                   placeholder='Enter Your Email Address'
                 />
                 <Form.Text className='text-muted'>
@@ -21,20 +25,16 @@ export default class FeedbackForm extends Component {
               </Form.Group>
 
               <Form.Group className='mb-3'>
-                <Form.Label>Name</Form.Label>
-                <Form.Control type='name' placeholder='Enter Your Name' />
-              </Form.Group>
-              <Form.Group className='mb-3'>
                 <Form.Label>Mobile Number</Form.Label>
                 <Form.Control
-                  type='mobile'
+                  name='mobile'
                   placeholder='Enter Your Mobile Number'
                 />
               </Form.Group>
               <Form.Group className='mb-3'>
                 <Form.Label>Service Type</Form.Label>
                 <Form.Control
-                  type='serviceType'
+                  name='serviceType'
                   placeholder='Enter Your Service Type'
                 />
               </Form.Group>
@@ -42,7 +42,7 @@ export default class FeedbackForm extends Component {
                 <Form.Label>Feedback</Form.Label>
                 <Form.Control
                   style={{ height: 100 }}
-                  type='feedback'
+                  name='feedback'
                   placeholder='Enter Your Feedback'
                 />
               </Form.Group>
