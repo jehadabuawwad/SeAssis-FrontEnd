@@ -1,11 +1,14 @@
-import React, { Component } from 'react';
-
-export default class HomeServices extends Component {
+import React, { Component } from "react";
+import HomeServicesContent from "../components/HomeServiceContent";
+import HomeServicesForm from "../components/HomeServiceForm";
+class HomeServices extends Component {
   render() {
     return (
-      <div>
-        <h1>hello</h1>
-      </div>
+      <>
+        <HomeServicesContent />
+        <HomeServicesForm />
+      </>
     );
   }
 }
+export default HomeServices;
