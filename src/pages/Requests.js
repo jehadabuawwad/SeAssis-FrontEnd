@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 
-export default class Requests extends Component {
+class Requests extends Component {
   render() {
-    return <div></div>;
+    return (
+      <div>
+        <h1> Requests Page </h1>
+      </div>
+    );
   }
 }
+export default Requests;
