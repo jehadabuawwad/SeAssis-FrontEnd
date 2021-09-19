@@ -7,7 +7,7 @@ import Feedback from './pages/Feedback';
 import HomeServices from './pages/HomeServices';
 import RoadServices from './pages/RoadServices';
 import Requests from './pages/Requests';
-import { Container } from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -20,7 +20,11 @@ export default class App extends Component {
           <Container>
             <Switch>
               <Route exact path='/'>
-                <Home />
+                <Row>
+                  <Col style={{ marginTop: 10 }} md={{ span: 15, offset: 0 }}>
+                    <Home />
+                  </Col>
+                </Row>
               </Route>
               <Route exact path='/HomeServices'>
                 <HomeServices />
