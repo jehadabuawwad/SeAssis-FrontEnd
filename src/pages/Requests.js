@@ -1,7 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import RoadServices from "./RoadServices";
 
-export default class Requests extends Component {
+class Requests extends Component {
   render() {
-    return <div></div>;
+    return (
+      <div>
+        <RoadServices />
+      </div>
+    );
   }
 }
+export default Requests;
