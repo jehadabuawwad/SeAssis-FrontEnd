@@ -3,13 +3,11 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Header from "./Header";
 
 export default class RoadServiceContent extends Component {
   render() {
     return (
       <div>
-        <Header />
         <Container>
           <Row xs={1} md={2}>
             <Col>
