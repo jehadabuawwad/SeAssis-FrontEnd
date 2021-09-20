@@ -28,13 +28,13 @@ export default class RoadServiceForm extends Component {
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicCheckbox">
             <Form.Label>Mobile Number</Form.Label>
-            <Form.Control type="number" placeholder="Add Your Phone" />
+            <Form.Control type="number" name="personPhone" placeholder="Add Your Phone" />
             <Form.Text className="text-muted"></Form.Text>
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicCheckbox">
             <Form.Label>Problem Description</Form.Label>
             <Form.Control
-              name="personPhone"
+              name="Description"
               type="text"
               placeholder="Add A Description To The Issue"
             />
