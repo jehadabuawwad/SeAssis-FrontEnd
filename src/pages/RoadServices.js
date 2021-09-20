@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
-import RoadServiceContent from '../components/RoadServiceContent';
-import RoadServiceForm from '../components/RoadServiceForm';
-import axios from 'axios';
+
+import React, { Component } from "react";
+import RoadServiceContent from "../components/RoadServiceContent";
+import RoadServiceForm from "../components/RoadServiceForm";
+import axios from "axios";
 
 class RoadServices extends Component {
   constructor(props) {
@@ -43,6 +44,7 @@ class RoadServices extends Component {
       });
   };
   render() {
+    console.log(this.state.serviceData);
     return (
       <div>
         <RoadServiceContent />
@@ -55,3 +57,7 @@ class RoadServices extends Component {
   }
 }
 export default RoadServices;
+
+
+
+
