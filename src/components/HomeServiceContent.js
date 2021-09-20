@@ -1,20 +1,18 @@
-import React, { Component } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
-
+import React, { Component } from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default class HomeServiceContent extends Component {
   render() {
     return (
       <div>
-        
         <Container>
           <Row xs={1} md={2}>
             <Col>
               <img
-                src="https://cdn-colla.nitrocdn.com/aGOFLQWREmkPcEuaJpGePQetRgHRrvYU/assets/static/optimized/rev-1e5b529/wp-content/uploads/2018/08/on-demand-home-services-main.jpg"
-                width="600px"
-                height="300px"
+                src='https://cdn-colla.nitrocdn.com/aGOFLQWREmkPcEuaJpGePQetRgHRrvYU/assets/static/optimized/rev-1e5b529/wp-content/uploads/2018/08/on-demand-home-services-main.jpg'
+                width='600px'
+                height='300px'
               />
             </Col>
             <Col>
@@ -40,12 +38,20 @@ export default class HomeServiceContent extends Component {
               matter of few minutes.
             </Col>
             <Col>
-              <img src="https://img2.chinadaily.com.cn/images/201902/26/5c7495a8a3106c65fffbd6f8.jpeg" width="600px" height="300px" />
+              <img
+                src='https://img2.chinadaily.com.cn/images/201902/26/5c7495a8a3106c65fffbd6f8.jpeg'
+                width='600px'
+                height='300px'
+              />
             </Col>
           </Row>
           <Row xs={1} md={2}>
             <Col>
-              <img src="http://jungleworks.com/wp-content/uploads/2018/02/yourstory-plumbers.jpg" width="600px" height="300px" />
+              <img
+                src='http://jungleworks.com/wp-content/uploads/2018/02/yourstory-plumbers.jpg'
+                width='600px'
+                height='300px'
+              />
             </Col>
             <Col>
               Similarly, these apps help in fixing problems of carpentry, house

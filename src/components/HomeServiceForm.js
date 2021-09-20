@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { Form, Button } from "react-bootstrap";
+import React, { Component } from 'react';
+import { Form, Button } from 'react-bootstrap';
 class HomeServiceForm extends Component {
   render() {
     return (
@@ -20,17 +20,22 @@ class HomeServiceForm extends Component {
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Button variant="primary">Get Your Location !</Button>
             <Form.Control type="text" placeholder="Add description" name="personAddress" />
+
           </Form.Group>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Group className='mb-3' controlId='formBasicEmail'>
             <Form.Label>Phone number</Form.Label>
+
             <Form.Control type="number" placeholder="Enter phone number" name="personPhone" />
+
           </Form.Group>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Group className='mb-3' controlId='formBasicEmail'>
             <Form.Label>Problem Description :</Form.Label>
+
             <Form.Control type="text" placeholder="Whats youre problem ?" name="Description" />
+
           </Form.Group>
 
-          <Button variant="primary" type="submit">
+          <Button variant='primary' type='submit'>
             Ask for help !
           </Button>
         </Form>

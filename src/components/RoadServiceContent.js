@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import "bootstrap/dist/css/bootstrap.min.css";
+import React, { Component } from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default class RoadServiceContent extends Component {
   render() {
@@ -12,9 +12,9 @@ export default class RoadServiceContent extends Component {
           <Row xs={1} md={2}>
             <Col>
               <img
-                src="https://media.istockphoto.com/vectors/roadside-assistance-vector-id628095858"
-                width="600px"
-                height="300px"
+                src='https://media.istockphoto.com/vectors/roadside-assistance-vector-id628095858'
+                width='600px'
+                height='300px'
               />
             </Col>
             <Col>
@@ -40,18 +40,18 @@ export default class RoadServiceContent extends Component {
             </Col>
             <Col>
               <img
-                src="https://dealerimages.dealereprocess.com/image/upload/w_2136/1544533.jpg"
-                width="600px"
-                height="300px"
+                src='https://dealerimages.dealereprocess.com/image/upload/w_2136/1544533.jpg'
+                width='600px'
+                height='300px'
               />
             </Col>
           </Row>
           <Row xs={1} md={2}>
             <Col>
               <img
-                src="https://aaaliving.acg.aaa.com/wp-content/uploads/2019/04/aaa-roadside-assistance-benefits-mobile.jpg"
-                width="600px"
-                height="300px"
+                src='https://aaaliving.acg.aaa.com/wp-content/uploads/2019/04/aaa-roadside-assistance-benefits-mobile.jpg'
+                width='600px'
+                height='300px'
               />
             </Col>
             <Col>

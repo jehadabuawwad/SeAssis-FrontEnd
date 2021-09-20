@@ -5,7 +5,6 @@ import Button from "react-bootstrap/Button";
 
 class Requests extends Component {
 
-
   constructor(props) {
     super(props);
 
@@ -13,8 +12,7 @@ class Requests extends Component {
       services: []
     };
   }
-
-
+  
   componentDidMount = () => {
     axios.get(`${process.env.REACT_APP_SERVER}/services`).then((servicesRes) => {
 
@@ -24,10 +22,6 @@ class Requests extends Component {
     }).catch(error => alert(error.message));
 
   }
-
-
-
-
 
   render() {
     return (
