@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { Form, Button } from 'react-bootstrap';
 class HomeServiceForm extends Component {
+
+  constructor(props){
+    super(props);
+  }
   render() {
     return (
       <>
@@ -18,7 +22,7 @@ class HomeServiceForm extends Component {
             <Form.Control type="email" placeholder="Enter email" />
           </Form.Group> */}
           <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Button variant="primary">Get Your Location !</Button>
+            <Button onClick={this.props.HandleLocation} variant="primary">Get Your Location !</Button>
             <Form.Control type="text" placeholder="Add description" name="personAddress" />
 
           </Form.Group>

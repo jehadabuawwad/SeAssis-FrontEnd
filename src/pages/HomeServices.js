@@ -13,7 +13,7 @@ class HomeServices extends Component {
       MapOfLocation: '',
     };
   }
-   HandleLocation = async () => {
+  HandleLocation = async () => {
     await navigator.geolocation.getCurrentPosition((position) => {
       this.setState({
         location: [position.coords.latitude, position.coords.longitude],
@@ -25,7 +25,7 @@ class HomeServices extends Component {
       });
     });
   };
-  
+
   HandleCreateHomeService = (e) => {
     e.preventDefault();
     const helpBody = {
@@ -33,6 +33,8 @@ class HomeServices extends Component {
       Pesron_Addres: e.target.personAddress.value,
       Pesron_Phone: e.target.personPhone.value,
       Person_Description: e.target.Description.value,
+      map: this.state.MapOfLocation,
+
     };
     console.log("helpbody", helpBody);
     axios.post(`${process.env.REACT_APP_SERVER}/services`, helpBody).then((createdService) => {
@@ -45,7 +47,9 @@ class HomeServices extends Component {
     return (
       <>
         <HomeServicesContent />
-        <HomeServicesForm HandleCreateHomeService={this.HandleCreateHomeService} />
+        <HomeServicesForm
+          HandleCreateHomeService={this.HandleCreateHomeService}
+          HandleLocation={this.HandleLocation} />
       </>
     );
   }
