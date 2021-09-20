@@ -1,11 +1,10 @@
-import React, { Component } from "react";
-import RoadServices from "./RoadServices";
+import React, { Component } from 'react';
 
 class Requests extends Component {
   render() {
     return (
       <div>
-        <RoadServices />
+        <h1> Requests Page </h1>
       </div>
     );
   }

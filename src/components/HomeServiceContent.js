@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Header from "./Header";
+
 
 export default class HomeServiceContent extends Component {
   render() {
     return (
       <div>
-        <Header />
+        
         <Container>
           <Row xs={1} md={2}>
             <Col>
