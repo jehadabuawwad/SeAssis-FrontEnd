@@ -2,11 +2,7 @@ import React, { Component } from 'react';
 
 class Requests extends Component {
   render() {
-    return (
-      <div>
-        <h1> Requests Page </h1>
-      </div>
-    );
+    return <div></div>;
   }
 }
 export default Requests;
