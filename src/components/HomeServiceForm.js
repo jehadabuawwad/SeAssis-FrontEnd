@@ -13,7 +13,7 @@ class HomeServiceForm extends Component {
         <Form onSubmit={this.props.HandleCreateHomeService}>
           <Row className="mb-3">
             <Col>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Group className="mb-3" controlId="formBasicEmail" >
                 <Form.Label>Name</Form.Label>
                 <Form.Control
                   type="text"

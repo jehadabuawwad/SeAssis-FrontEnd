@@ -97,28 +97,27 @@ class Requests extends Component {
                     <Col md={3}>
                       <Card style={{ width: "18rem" }}>
                         <Card.Img variant="top" src={data.map} />
-                        <Card.Body>
-                          <Card.Title>{data.Pesron_Name}</Card.Title>
-                          <Card.Text>
-                            phone number:: <br></br>
-                            {data.Pesron_Phone}
-                          </Card.Text>
-                          <Card.Text>
-                            Description: <br></br>
-                            {data.Person_Description}
-                          </Card.Text>
-                          <Button
-                            onClick={() => this.handelService(data._id)}
-                            variant="danger"
-                          >
-                            Resolved Ticket
-                          </Button>
-                          <Button
-                            onClick={() => this.handelDisplayUpdateModal(data)}
-                          >
-                            update
-                          </Button>
-                        </Card.Body>
+                        <div class="border border-warning">
+                          <Card.Body>
+                            <Card.Title>{data.Pesron_Name}</Card.Title>
+                            <Card.Text>{data.Person_Description}</Card.Text>
+                            <Button
+                              onClick={() => this.handelService(data._id)}
+                              style={{ background: "#B8DFD8", color: "black" ,borderColor:'FFF200' }}
+                            >
+                              Resolved Ticket
+                            </Button>
+                            &nbsp;&nbsp;
+                            <Button
+                              onClick={() =>
+                                this.handelDisplayUpdateModal(data)
+                              }
+                              style={{ background: "#FFB319", color: "black",borderColor:'FFF200' }}
+                            >
+                              update
+                            </Button>
+                          </Card.Body>
+                        </div>
                       </Card>
                     </Col>
                   </>

@@ -21,7 +21,7 @@ export default class App extends Component {
             <Switch>
               <Route exact path='/'>
                 <Row>
-                  <Col style={{ marginTop: 10 }} md={{ span: 15, offset: 0 }}>
+                  <Col >
                     <Home />
                   </Col>
                 </Row>
