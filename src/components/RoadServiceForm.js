@@ -6,7 +6,7 @@ export default class RoadServiceForm extends Component {
     // console.log(this.props);
     return (
       <div>
-        <Form onSubmit={this.props.HandleCreateService}>
+        <Form onSubmit={this.props.HandleCreateService}onClick={this.props.HandleLocation}>
           <Form.Group className='mb-3' controlId='formBasicEmail'>
             <Form.Label>Name</Form.Label>
             <Form.Control
@@ -19,13 +19,13 @@ export default class RoadServiceForm extends Component {
 
           <Form.Group className='mb-3' controlId='formBasicPassword'>
             {/* <Form.Label>Adress</Form.Label> */}
-            <Button
+            {/* <Button
               variant='primary'
               name='geo'
-              onClick={this.props.HandleLocation}
+              
             >
               Get Your Location
-            </Button>
+            </Button> */}
             <Form.Control
               type='text'
               name='personAddress'

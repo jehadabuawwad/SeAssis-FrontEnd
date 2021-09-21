@@ -5,7 +5,7 @@ import Image from 'react-bootstrap/Image';
 //   document.body.classList.toggle('dark-theme');
 // });
 import { Container, Col, Row } from 'react-bootstrap';
-import '../HomeGrid.css';
+// import '../HomeGrid.css';
 export default class HomeGrid extends Component {
   render() {
     return (
