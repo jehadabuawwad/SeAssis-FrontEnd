@@ -24,6 +24,8 @@ export default class AboutUsGrid extends Component {
                       src={JehadImage}
                       alt='RoadService'
                       fluid
+                      style={{ width: 500 ,height:400 }}
+                     
                     />
                     <h3>Team Leader</h3>
                     <p>Jehad Abu Awwad</p>
@@ -41,7 +43,7 @@ export default class AboutUsGrid extends Component {
                     <i class='fab fa-java'></i>
                     <Image
                       className='d-block w-100'
-                      style={{ width: 500 }}
+                      style={{ width: 500 ,height:400 }}
                       src={SamahImage}
                       alt='RoadService'
                       fluid
@@ -63,7 +65,7 @@ export default class AboutUsGrid extends Component {
                     <i class='fab fa-java'></i>
                     <Image
                       className='d-block w-100'
-                      style={{ width: 500 }}
+                      style={{ width: 500 ,height:400}}
                       src={IbrahemImage}
                       alt='RoadService'
                       fluid
@@ -85,7 +87,7 @@ export default class AboutUsGrid extends Component {
                     <i class='fab fa-java'></i>
                     <Image
                       className='d-block w-100'
-                      style={{ width: 500 }}
+                      style={{ width: 500 ,height:400}}
                       src={EhabImage}
                       alt='RoadService'
                       fluid
@@ -107,7 +109,7 @@ export default class AboutUsGrid extends Component {
                     <i class='fab fa-java'></i>
                     <Image
                       className='d-block w-100'
-                      style={{ width: 500 }}
+                      style={{ width: 500 ,height:400}}
                       src={AhmadImage}
                       alt='RoadService'
                       fluid
@@ -129,7 +131,7 @@ export default class AboutUsGrid extends Component {
                     <i class='fab fa-java'></i>
                     <Image
                       className='d-block w-100'
-                      style={{ width: 500 }}
+                      style={{ width: 500 ,height:400}}
                       src={GharamImage}
                       alt='RoadService'
                       fluid
