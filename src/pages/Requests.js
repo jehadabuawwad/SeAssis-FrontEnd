@@ -103,6 +103,11 @@ class Requests extends Component {
                         <Card.Body>
                           <Card.Title>{data.Pesron_Name}</Card.Title>
                           <Card.Text>
+                          phone number:: <br></br>
+                            {data.Pesron_Phone}
+                          </Card.Text>
+                          <Card.Text>
+                         Description: <br></br>
                             {data.Person_Description}
                           </Card.Text>
                           <Button onClick={() => this.handelService(data._id)} variant="danger">Resolved Ticket</Button>
