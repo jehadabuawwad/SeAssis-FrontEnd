@@ -1,9 +1,8 @@
-
-import React, { Component } from "react";
-import RoadServiceContent from "../components/RoadServiceContent";
-import RoadServiceForm from "../components/RoadServiceForm";
-import axios from "axios";
-
+import React, { Component } from 'react';
+import RoadServiceContent from '../components/RoadServiceContent';
+import RoadServiceForm from '../components/RoadServiceForm';
+import axios from 'axios';
+require('dotenv').config();
 class RoadServices extends Component {
   constructor(props) {
     super(props);
@@ -33,7 +32,7 @@ class RoadServices extends Component {
       Pesron_Addres: e.target.personAddress.value,
       Pesron_Phone: e.target.personPhone.value,
       Person_Description: e.target.Description.value,
-      map: this.state.MapOfLocation
+      map: this.state.MapOfLocation,
     };
     console.log('helpbody', helpBody);
     axios
@@ -57,7 +56,3 @@ class RoadServices extends Component {
   }
 }
 export default RoadServices;
-
-
-
-

@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import HomeServicesContent from "../components/HomeServiceContent";
-import HomeServicesForm from "../components/HomeServiceForm";
-import axios from "axios";
-
+import React, { Component } from 'react';
+import HomeServicesContent from '../components/HomeServiceContent';
+import HomeServicesForm from '../components/HomeServiceForm';
+import axios from 'axios';
+require('dotenv').config();
 class HomeServices extends Component {
   constructor(props) {
     super(props);
@@ -13,7 +13,7 @@ class HomeServices extends Component {
       MapOfLocation: '',
     };
   }
-   HandleLocation = async () => {
+  HandleLocation = async () => {
     await navigator.geolocation.getCurrentPosition((position) => {
       this.setState({
         location: [position.coords.latitude, position.coords.longitude],
@@ -25,7 +25,7 @@ class HomeServices extends Component {
       });
     });
   };
-  
+
   HandleCreateHomeService = (e) => {
     e.preventDefault();
     const helpBody = {
@@ -34,18 +34,21 @@ class HomeServices extends Component {
       Pesron_Phone: e.target.personPhone.value,
       Person_Description: e.target.Description.value,
     };
-    console.log("helpbody", helpBody);
-    axios.post(`${process.env.REACT_APP_SERVER}/services`, helpBody).then((createdService) => {
-      this.state.serviceData.push(createdService.data);
-      this.setState({ serviceData: this.state.serviceData });
-    });
+    console.log('helpbody', helpBody);
+    axios
+      .post(`${process.env.REACT_APP_SERVER}/services`, helpBody)
+      .then((createdService) => {
+        this.state.serviceData.push(createdService.data);
+        this.setState({ serviceData: this.state.serviceData });
+      });
   };
   render() {
-
     return (
       <>
         <HomeServicesContent />
-        <HomeServicesForm HandleCreateHomeService={this.HandleCreateHomeService} />
+        <HomeServicesForm
+          HandleCreateHomeService={this.HandleCreateHomeService}
+        />
       </>
     );
   }
