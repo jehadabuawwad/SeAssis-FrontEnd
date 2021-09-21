@@ -10,7 +10,7 @@ class HomeServices extends Component {
     this.state = {
       serviceData: [],
       location: [],
-      MapOfLocation: '',
+      MapOfLocation: "",
     };
   }
   HandleLocation = async () => {
@@ -24,6 +24,7 @@ class HomeServices extends Component {
         this.setState({ MapOfLocation: mapResponse.request.responseURL });
       });
     });
+    console.log("hiiiiiiiiiiiiiiiii");
   };
 
   HandleCreateHomeService = (e) => {
@@ -34,22 +35,25 @@ class HomeServices extends Component {
       Pesron_Phone: e.target.personPhone.value,
       Person_Description: e.target.Description.value,
       map: this.state.MapOfLocation,
-
     };
     console.log("helpbody", helpBody);
-    axios.post(`${process.env.REACT_APP_SERVER}/services`, helpBody).then((createdService) => {
-      this.state.serviceData.push(createdService.data);
-      this.setState({ serviceData: this.state.serviceData });
-    });
+    axios
+      .post(`${process.env.REACT_APP_SERVER}/services`, helpBody)
+      .then((createdService) => {
+        this.state.serviceData.push(createdService.data);
+        this.setState({ serviceData: this.state.serviceData });
+      });
+    window.location.reload();
+    alert("the help on the way");
   };
   render() {
-
     return (
       <>
         <HomeServicesContent />
         <HomeServicesForm
           HandleCreateHomeService={this.HandleCreateHomeService}
-          HandleLocation={this.HandleLocation} />
+          HandleLocation={this.HandleLocation}
+        />
       </>
     );
   }

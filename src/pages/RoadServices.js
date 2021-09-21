@@ -1,16 +1,16 @@
-
 import React, { Component } from "react";
 import RoadServiceContent from "../components/RoadServiceContent";
 import RoadServiceForm from "../components/RoadServiceForm";
 import axios from "axios";
-
+import Alert from "react-bootstrap/Alert";
 class RoadServices extends Component {
   constructor(props) {
     super(props);
     this.state = {
       serviceData: [],
       location: [],
-      MapOfLocation: '',
+      MapOfLocation: "",
+      showAlert: false,
     };
   }
   HandleLocation = async () => {
@@ -24,6 +24,7 @@ class RoadServices extends Component {
         this.setState({ MapOfLocation: mapResponse.request.responseURL });
       });
     });
+    console.log("halalalaldjdkkd");
   };
 
   HandleCreateService = (e) => {
@@ -33,31 +34,38 @@ class RoadServices extends Component {
       Pesron_Addres: e.target.personAddress.value,
       Pesron_Phone: e.target.personPhone.value,
       Person_Description: e.target.Description.value,
-      map: this.state.MapOfLocation
+      map: this.state.MapOfLocation,
     };
-    console.log('helpbody', helpBody);
+    console.log("helpbody", helpBody);
+    console.log("ho");
     axios
       .post(`${process.env.REACT_APP_SERVER}/services`, helpBody)
       .then((createdService) => {
         this.state.serviceData.push(createdService.data);
         this.setState({ serviceData: this.state.serviceData });
       });
+    window.location.reload();
+    this.setState({
+      showAlert: true,
+    });
   };
+
   render() {
-    console.log(this.state.serviceData);
+    console.log(this.state.showAlert);
     return (
-      <div>
+      <>
+        {this.state.showAlert && (
+          <>
+            <Alert variant="danger">The Help is on the way</Alert>
+          </>
+        )}
         <RoadServiceContent />
         <RoadServiceForm
           HandleCreateService={this.HandleCreateService}
           HandleLocation={this.HandleLocation}
         />
-      </div>
+      </>
     );
   }
 }
 export default RoadServices;
-
-
-
-
