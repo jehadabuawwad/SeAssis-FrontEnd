@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import HomeServicesContent from "../components/HomeServiceContent";
-import HomeServicesForm from "../components/HomeServiceForm";
-import axios from "axios";
-
+import React, { Component } from 'react';
+import HomeServiceContent from '../components/HomeServiceContent';
+import HomeServiceForm from '../components/HomeServiceForm';
+import axios from 'axios';
+require('dotenv').config();
 class HomeServices extends Component {
   constructor(props) {
     super(props);
@@ -49,8 +49,8 @@ class HomeServices extends Component {
   render() {
     return (
       <>
-        <HomeServicesContent />
-        <HomeServicesForm
+        <HomeServiceContent />
+        <HomeServiceForm
           HandleCreateHomeService={this.HandleCreateHomeService}
           HandleLocation={this.HandleLocation}
         />

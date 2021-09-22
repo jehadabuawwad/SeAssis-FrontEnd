@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { Col, Row } from 'react-bootstrap';
-import Carousel from 'react-bootstrap/Carousel';
+import React, { Component } from "react";
+import { Col, Row } from "react-bootstrap";
+import Carousel from "react-bootstrap/Carousel";
 export default class FeedbackSlider extends Component {
   constructor(props) {
     super(props);
@@ -16,13 +16,12 @@ export default class FeedbackSlider extends Component {
                   return (
                     <Carousel.Item interval={3000}>
                       <img
-
-                        className='d-block w-100'
-                        src='https://c1.wallpaperflare.com/preview/696/379/736/feedback-exchange-of-ideas-debate-discussion.jpg'
+                        className="d-block w-100"
+                        src="https://c1.wallpaperflare.com/preview/696/379/736/feedback-exchange-of-ideas-debate-discussion.jpg"
                         rounded
                         // style={{height:500,width:400}}
                       />
-                      <Carousel.Caption style={{color:'black'}}>
+                      <Carousel.Caption style={{ color: "white" }}>
                         <h3>{element.name}</h3>
                         <p>{element.feedback}</p>
                       </Carousel.Caption>
