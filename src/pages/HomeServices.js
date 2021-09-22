@@ -10,7 +10,7 @@ class HomeServices extends Component {
     this.state = {
       serviceData: [],
       location: [],
-      MapOfLocation: "",
+      MapOfLocation: '',
     };
   }
   HandleLocation = async () => {
@@ -24,7 +24,7 @@ class HomeServices extends Component {
         this.setState({ MapOfLocation: mapResponse.request.responseURL });
       });
     });
-    console.log("hiiiiiiiiiiiiiiiii");
+    console.log('hiiiiiiiiiiiiiiiii');
   };
 
   HandleCreateHomeService = (e) => {
@@ -36,7 +36,7 @@ class HomeServices extends Component {
       Person_Description: e.target.Description.value,
       map: this.state.MapOfLocation,
     };
-    console.log("helpbody", helpBody);
+    console.log('helpbody', helpBody);
     axios
       .post(`${process.env.REACT_APP_SERVER}/services`, helpBody)
       .then((createdService) => {
@@ -44,7 +44,7 @@ class HomeServices extends Component {
         this.setState({ serviceData: this.state.serviceData });
       });
     window.location.reload();
-    alert("the help on the way");
+    alert('the help on the way');
   };
   render() {
     return (

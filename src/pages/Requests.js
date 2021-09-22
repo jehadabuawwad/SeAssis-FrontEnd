@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import UpdateModale from "../components/updateModale";
-
-import axios from "axios";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import React, { Component } from 'react';
+import UpdateModale from '../components/updateModale';
+import axios from 'axios';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+require('dotenv').config();
 class Requests extends Component {
   constructor(props) {
     super(props);
@@ -37,7 +37,7 @@ class Requests extends Component {
           this.setState({ services: newServicArr });
         }
       })
-      .catch(() => alert("something went wrong -check axios.delete function "));
+      .catch(() => alert('something went wrong -check axios.delete function '));
   };
 
   handelUpdateModal = (e) => {
@@ -65,7 +65,7 @@ class Requests extends Component {
         });
         this.handelDisplayUpdateModal();
       })
-      .catch(() => alert("Something went wrong!"));
+      .catch(() => alert('Something went wrong!'));
   };
 
   handelDisplayUpdateModal = (serviceObj) => {
@@ -95,15 +95,19 @@ class Requests extends Component {
                 return (
                   <>
                     <Col md={3}>
-                      <Card style={{ width: "18rem" }}>
-                        <Card.Img variant="top" src={data.map} />
-                        <div class="border border-warning">
+                      <Card style={{ width: '18rem' }}>
+                        <Card.Img variant='top' src={data.map} />
+                        <div class='border border-warning'>
                           <Card.Body>
                             <Card.Title>{data.Pesron_Name}</Card.Title>
                             <Card.Text>{data.Person_Description}</Card.Text>
                             <Button
                               onClick={() => this.handelService(data._id)}
-                              style={{ background: "#B8DFD8", color: "black" ,borderColor:'FFF200' }}
+                              style={{
+                                background: '#B8DFD8',
+                                color: 'black',
+                                borderColor: 'FFF200',
+                              }}
                             >
                               Resolved Ticket
                             </Button>
@@ -112,7 +116,11 @@ class Requests extends Component {
                               onClick={() =>
                                 this.handelDisplayUpdateModal(data)
                               }
-                              style={{ background: "#FFB319", color: "black",borderColor:'FFF200' }}
+                              style={{
+                                background: '#FFB319',
+                                color: 'black',
+                                borderColor: 'FFF200',
+                              }}
                             >
                               update
                             </Button>

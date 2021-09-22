@@ -7,10 +7,12 @@ import HomeGrid2 from '../media/images/HomeGrid2.jpg';
 export default class HomeGrid extends Component {
   render() {
     return (
-      <Container  style={{
-        marginTop: 50,
-        marginLeft:75,
-      }}>
+      <Container
+        style={{
+          marginTop: 50,
+          marginLeft: 75,
+        }}
+      >
         <Row>
           <Col md={{ span: 6, offset: 0 }}>
             <div class='card1'>

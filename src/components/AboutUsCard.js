@@ -6,7 +6,7 @@ export default class AboutUsCard extends Component {
   render() {
     return (
       <Row>
-        <h1 style={{ marginTop: 75, color: 'black' }}>Our Team Mates</h1>
+        <h1 style={{ color: 'black' }}>Our Team Mates</h1>
         <Col style={{ marginBottom: 25 }} md={{ span: 0, offset: 0 }}>
           <Card
             style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}

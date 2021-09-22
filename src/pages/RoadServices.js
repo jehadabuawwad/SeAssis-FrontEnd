@@ -1,15 +1,15 @@
-import React, { Component } from "react";
-import RoadServiceContent from "../components/RoadServiceContent";
-import RoadServiceForm from "../components/RoadServiceForm";
-import axios from "axios";
-import Alert from "react-bootstrap/Alert";
+import React, { Component } from 'react';
+import RoadServiceContent from '../components/RoadServiceContent';
+import RoadServiceForm from '../components/RoadServiceForm';
+import axios from 'axios';
+import Alert from 'react-bootstrap/Alert';
 class RoadServices extends Component {
   constructor(props) {
     super(props);
     this.state = {
       serviceData: [],
       location: [],
-      MapOfLocation: "",
+      MapOfLocation: '',
       showAlert: false,
     };
   }
@@ -24,7 +24,7 @@ class RoadServices extends Component {
         this.setState({ MapOfLocation: mapResponse.request.responseURL });
       });
     });
-    console.log("halalalaldjdkkd");
+    console.log('halalalaldjdkkd');
   };
 
   HandleCreateService = (e) => {
@@ -36,8 +36,8 @@ class RoadServices extends Component {
       Person_Description: e.target.Description.value,
       map: this.state.MapOfLocation,
     };
-    console.log("helpbody", helpBody);
-    console.log("ho");
+    console.log('helpbody', helpBody);
+    console.log('ho');
     axios
       .post(`${process.env.REACT_APP_SERVER}/services`, helpBody)
       .then((createdService) => {
@@ -56,7 +56,7 @@ class RoadServices extends Component {
       <>
         {this.state.showAlert && (
           <>
-            <Alert variant="danger">The Help is on the way</Alert>
+            <Alert variant='danger'>The Help is on the way</Alert>
           </>
         )}
         <RoadServiceContent />

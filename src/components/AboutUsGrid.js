@@ -23,8 +23,7 @@ export default class AboutUsGrid extends Component {
                       src={JehadImage}
                       alt='RoadService'
                       fluid
-                      style={{ width: 500 ,height:400 }}
-                     
+                      style={{ width: 500, height: 300 }}
                     />
                     <h3 class='name2'>Team Leader</h3>
                     <p class='name2'>Jehad Abu Awwad</p>

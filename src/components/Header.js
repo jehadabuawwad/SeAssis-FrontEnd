@@ -5,7 +5,7 @@ import Logo from '../media/images/Logo.png';
 export default class Header extends Component {
   render() {
     return (
-      <Container  style={{marginBottom:50}}>
+      <Container style={{ marginBottom: 75 }}>
         <Col md={{ span: 0, offset: 0 }}>
           <Navbar
             fixed='top'
@@ -28,21 +28,26 @@ export default class Header extends Component {
                 rounded
               />
             </Col>
-            <Navbar.Brand style={{marginRight:75}} href='/'>Home</Navbar.Brand>
-            <NavDropdown style={{marginRight:75}}title='Services'>
+            <Navbar.Brand style={{ marginRight: 75 }} href='/'>
+              Home
+            </Navbar.Brand>
+            <NavDropdown style={{ marginRight: 75 }} title='Services'>
               <NavDropdown.Item href='/HomeServices'>
                 Home Services
               </NavDropdown.Item>
-              <NavDropdown.Item
-                href="/RoadServices"
-            
-              >
+              <NavDropdown.Item href='/RoadServices'>
                 Road Services
               </NavDropdown.Item>
             </NavDropdown>
-            <Navbar.Brand style={{marginRight:75}} href='/Requests'>Requests</Navbar.Brand>
-            <Navbar.Brand style={{marginRight:75}} href='/Feedback'>Feedback</Navbar.Brand>
-            <Navbar.Brand style={{marginRight:75}} href='/AboutUs'>About Us</Navbar.Brand>
+            <Navbar.Brand style={{ marginRight: 75 }} href='/Requests'>
+              Requests
+            </Navbar.Brand>
+            <Navbar.Brand style={{ marginRight: 75 }} href='/Feedback'>
+              Feedback
+            </Navbar.Brand>
+            <Navbar.Brand style={{ marginRight: 75 }} href='/AboutUs'>
+              About Us
+            </Navbar.Brand>
           </Navbar>
         </Col>
       </Container>
