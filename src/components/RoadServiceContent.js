@@ -18,25 +18,24 @@ export default class RoadServiceContent extends Component {
               />
             </Col>
             <Col>
-              Conveying meaning to assistive technologies Using color to add
-              meaning only provides a visual indication, which will not be
-              conveyed to users of assistive technologies – such as screen
-              readers. Ensure that information denoted by the color is either
-              obvious from the content itself (e.g. the visible text), or is
-              included through alternative means, such as additional text hidden
-              with the .visually-hidden class.
+  Our dedicated team of Customer Service professionals are on call 24 hours a day,
+  7 days a week to provide assistance wherever our members are. 
+  All of our memberships include:
+Towing – Emergency towing can transport your vehicle to the nearest repairer up to the kilometre limits of your plan.
+Flat Battery – We’ll either provide a jump start or arrange a battery replacement if available,
+ to help you on your way.
+
+
             </Col>
           </Row>
 
           <Row xs={1} md={2}>
             <Col>
-              Conveying meaning to assistive technologies Using color to add
-              meaning only provides a visual indication, which will not be
-              conveyed to users of assistive technologies – such as screen
-              readers. Ensure that information denoted by the color is either
-              obvious from the content itself (e.g. the visible text), or is
-              included through alternative means, such as additional text hidden
-              with the .visually-hidden class.
+            
+When you make contact with us we will verify your location and the problem you are experiencing and 
+arrange for the appropriate service. We will confirm with our service provider and provide you with an 
+estimated wait time. If there are any delay’s advised by our service providers, we will update you.
+
             </Col>
             <Col>
               <img
@@ -60,7 +59,8 @@ export default class RoadServiceContent extends Component {
               conveyed to users of assistive technologies – such as screen
               readers. Ensure that information denoted by the color is either
               obvious from the content itself (e.g. the visible text), or is
-              included through alternative means, such as additional text hidden
+              included through alternative means,
+               such as additional text hidden
               with the .visually-hidden class.
             </Col>
           </Row>

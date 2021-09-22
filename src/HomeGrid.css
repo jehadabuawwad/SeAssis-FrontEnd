@@ -18,7 +18,7 @@ https://codepen.io/DivineBlow/pen/KKgBPxY
 }
 
 body {
-  background: #F5F5F5;
+  /* background: #F5F5F5; */
   /* display: flex; */
   /* justify-content: center; */
   /* align-items: center; */
@@ -145,7 +145,7 @@ body {
 .container .card:hover .box {
   transform: translateY(-1px);
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-  background: linear-gradient(45deg, #b95ce4, #4f29cd);
+  background: linear-gradient(45deg, #a3e1fa, #4f29cd);
   
 }
 

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Form, Button } from "react-bootstrap";
-
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 class HomeServiceForm extends Component {
@@ -9,11 +8,11 @@ class HomeServiceForm extends Component {
   }
   render() {
     return (
-      <div class="border border-warning">
-        <Form onSubmit={this.props.HandleCreateHomeService}>
+      <div class="border border-warning" style={{borderRadius:'15px'}}>
+        <Form onSubmit={this.props.HandleCreateHomeService} >
           <Row className="mb-3">
             <Col>
-              <Form.Group className="mb-3" controlId="formBasicEmail" >
+              <Form.Group className="mb-3" controlId="formBasicEmail" style={{marginLeft:'15px'}}>
                 <Form.Label>Name</Form.Label>
                 <Form.Control
                   type="text"
@@ -51,7 +50,7 @@ class HomeServiceForm extends Component {
               </Form.Group>
             </Col>
             <Col>
-              <Form.Group controlId="formGridZip">
+              <Form.Group controlId="formGridZip"   style={{marginRight:'15px'}}>
                 <Form.Label>Phone Number</Form.Label>
                 <Form.Control
                   type="number"
@@ -65,7 +64,7 @@ class HomeServiceForm extends Component {
             <Form.Group className="mb-3" controlId="formBasicCheckbox">
               <Form.Label>Problem Description</Form.Label>
               <Form.Control
-                style={{ height: 200 }}
+                style={{ height: 200}}
                 name="Description"
                 type="text"
                 placeholder="Add A Description To The Issue"
@@ -73,7 +72,7 @@ class HomeServiceForm extends Component {
               <Form.Text className="text-muted"></Form.Text>
             </Form.Group>
           </Col>
-          <div class="d-grid gap-2">
+          <div class="d-grid gap-2" style={{marginLeft:'15px', marginRight:'15px' ,marginBottom:'5px'}}>
             <Button variant="warning" type="submit">
               Ask For Help
             </Button>

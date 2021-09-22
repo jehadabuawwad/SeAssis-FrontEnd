@@ -3,7 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 export default class HomeSlider extends Component {
   render() {
     return (
-      <div style={{  width: 1400,marginRight:100}}>
+      <div style={{  width: 1400,marginRight:20,marginLeft:-50}}>
         <Carousel ariant="dark">
           <Carousel.Item>
             <img

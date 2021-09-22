@@ -8,11 +8,11 @@ export default class RoadServiceForm extends Component {
   render() {
     // console.log(this.props);
     return (
-      <div class="border border-warning">
-        <Form onSubmit={this.props.HandleCreateService}>
+      <div class="border border-warning"  style={{borderRadius:'15px'}}>
+        <Form onSubmit={this.props.HandleCreateService}  >
           <Row className="mb-3">
             <Col>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Group className="mb-3" controlId="formBasicEmail" style={{marginLeft:'15px'}}>
                 <Form.Label>Name</Form.Label>
                 <Form.Control
                   type="text"
@@ -50,7 +50,7 @@ export default class RoadServiceForm extends Component {
               </Form.Group>
             </Col>
             <Col>
-              <Form.Group controlId="formGridZip">
+              <Form.Group controlId="formGridZip" style={{marginRight:'15px'}}>
                 <Form.Label>Phone Number</Form.Label>
                 <Form.Control
                   type="number"
@@ -73,7 +73,7 @@ export default class RoadServiceForm extends Component {
             </Form.Group>
           </Col>
           <div class="d-grid gap-2">
-            <Button variant="warning" type="submit">
+            <Button variant="warning" type="submit" style={{marginLeft:'15px', marginRight:'15px' ,marginBottom:'5px'}}>
               Ask For Help
             </Button>
           </div>
