@@ -18,28 +18,28 @@ export default class Header extends Component {
             }}
             variant='dark'
           >
-            <Col md={{ span: 1, offset: 0 }} xs={{ span: 8, offset: 0 }}>
+            <Col md={{ span: 3, offset: 0 }} xs={{ span: 8, offset: 0 }}>
               <Image
                 style={{
-                  width: 125,
-                  height: 125,
+                  width: 200,
+                  height: 200,
                 }}
                 src={Logo}
                 rounded
               />
             </Col>
-            <Navbar.Brand href='/'>Home</Navbar.Brand>
-            <NavDropdown title='Services' id='collasible-nav-dropdown'>
-              <NavDropdown.Item href='/HomeServices'>
+            <Navbar.Brand style={{marginRight:75}} href='/'>Home</Navbar.Brand>
+            <NavDropdown style={{marginRight:75}}title='Services'>
+              <NavDropdown.Item href='/HomeServic es'>
                 Home Services
               </NavDropdown.Item>
               <NavDropdown.Item href='/RoadServices'>
                 Road Services
               </NavDropdown.Item>
             </NavDropdown>
-            <Navbar.Brand href='/Requests'>Requests</Navbar.Brand>
-            <Navbar.Brand href='/Feedback'>Feedback</Navbar.Brand>
-            <Navbar.Brand href='/AboutUs'>About Us</Navbar.Brand>
+            <Navbar.Brand style={{marginRight:75}} href='/Requests'>Requests</Navbar.Brand>
+            <Navbar.Brand style={{marginRight:75}} href='/Feedback'>Feedback</Navbar.Brand>
+            <Navbar.Brand style={{marginRight:75}} href='/AboutUs'>About Us</Navbar.Brand>
           </Navbar>
         </Col>
       </Container>

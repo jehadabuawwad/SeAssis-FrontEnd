@@ -15,7 +15,7 @@ export default class HomeGrid extends Component {
                 <div class='content1'>
                   <a class='anker' href='/RoadServices'>
                     <Image
-                      style={{ width: 500, height: 300 }}
+                      style={{ width: 100, height: 400 }}
                       className='d-block w-100'
                       src={HomeGrid1}
                       alt='RoadService'
@@ -37,7 +37,7 @@ export default class HomeGrid extends Component {
                   <a class='anker' href='/HomeServices'>
                     <Image
                       className='d-block w-100'
-                      style={{ width: 500, height: 300 }}
+                      style={{ width: 400, height: 400 }}
                       src={HomeGrid2}
                       alt='RoadService'
                       fluid

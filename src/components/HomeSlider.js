@@ -12,9 +12,9 @@ export default class HomeSlider extends Component {
             <Carousel
               expand='lg'
               style={{
-                width: '144%',
-                marginLeft: -285,
-                marginBottom:25,
+                width: '140%',
+                marginLeft: '-20%',
+                marginBottom: '5%',
                 padding: 0,
               }}
               ariant='dark'
@@ -29,9 +29,9 @@ export default class HomeSlider extends Component {
                 />
                 <Carousel.Caption
                   style={{
-                    fontSize: 30,
-                    marginBottom: 0,
-                    marginLeft: 'auto',
+                    fontSize: 40,
+                    marginBottom: '5%',
+                    marginLeft: '-60%',
                   }}
                 >
                   <h1 style={{ color: 'white' }}>Road Service</h1>
@@ -40,12 +40,20 @@ export default class HomeSlider extends Component {
               </Carousel.Item>
               <Carousel.Item>
                 <img
-                  style={{ height: 850 }}
+                  style={{
+                    height: 850,
+                  }}
                   className='d-block w-100'
                   src={HomeSlider2}
                   alt='Second slide'
                 />
-                <Carousel.Caption>
+                <Carousel.Caption
+                  style={{
+                    fontSize: 40,
+                    marginBottom: '5%',
+                    marginLeft: '-60%',
+                  }}
+                >
                   <h1 style={{ color: 'white' }}>Home Service</h1>
                   <p style={{ color: 'white' }}>Get help on your House</p>
                 </Carousel.Caption>

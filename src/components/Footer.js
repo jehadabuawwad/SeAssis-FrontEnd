@@ -4,13 +4,13 @@ export default class Footer extends Component {
   render() {
     return (
       <Row fluid>
-        <Col md={{ span: 7, offset: 0 }}>
+        <Col md={{ span: 8, offset: 0 }}>
           <Navbar
             expand='lg'
             style={{
-              backgroundColor: '#FF8300',
+              backgroundColor: '#343F56',
               margin: -25,
-              height: 100,
+              height: 120,
               shadowColor: '#FFFFF',
               shadowOffset: {
                 width: 100,
@@ -29,13 +29,13 @@ export default class Footer extends Component {
             </Navbar.Brand>
           </Navbar>
         </Col>
-        <Col md={{ span: 5, offset: 0 }}>
+        <Col md={{ span: 4, offset: 0 }}>
           <Navbar
             expand='lg'
             style={{
-              backgroundColor: '#F17808',
+              backgroundColor: '#343F56',
               margin: -25,
-              height: 100,
+              height: 120,
               shadowColor: '#FF8300',
               shadowOffset: {
                 width: 100,
@@ -47,12 +47,16 @@ export default class Footer extends Component {
             expand='lg'
             variant='dark'
           >
-            <Navbar.Brand href='/'>Home</Navbar.Brand>
-            <Navbar.Brand href='/HomeServices'>Home Services</Navbar.Brand>
-            <Navbar.Brand href='/RoadServices'>Road Services</Navbar.Brand>
-            <Navbar.Brand href='/Requests'>Requests</Navbar.Brand>
             <Navbar.Brand href='/Feedback'>Feedback</Navbar.Brand>
             <Navbar.Brand href='/AboutUs'>About Us</Navbar.Brand>
+            <Navbar.Brand>
+              <p style={{ marginLeft:40, fontSize: '20px', height: 15, padding: 10 }}>
+                Email: SeAssis@outlook.com
+              </p>
+              <p style={{ marginLeft:40,fontSize: '20px', height: 15, padding: 10 }}>
+                Contact Us: +962 78 7002130
+              </p>
+            </Navbar.Brand>
           </Navbar>
         </Col>
       </Row>
