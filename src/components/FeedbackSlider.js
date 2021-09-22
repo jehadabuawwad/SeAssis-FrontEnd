@@ -16,12 +16,13 @@ export default class FeedbackSlider extends Component {
                   return (
                     <Carousel.Item interval={3000}>
                       <img
+
                         className='d-block w-100'
-                        src='https://img5.goodfon.com/original/1920x1080/b/c0/ploskii-krugi-temnyi-fon-shtrikhovka-goluboi-aktsent.jpg'
-                        alt='First slide'
+                        src='https://c1.wallpaperflare.com/preview/696/379/736/feedback-exchange-of-ideas-debate-discussion.jpg'
                         rounded
+                        // style={{height:500,width:400}}
                       />
-                      <Carousel.Caption>
+                      <Carousel.Caption style={{color:'black'}}>
                         <h3>{element.name}</h3>
                         <p>{element.feedback}</p>
                       </Carousel.Caption>
