@@ -111,7 +111,7 @@ class Requests extends Component {
                             >
                               Resolved Ticket
                             </Button>
-                            &nbsp;&nbsp;
+                            {/* &nbsp;&nbsp; */}
                             <Button
                               onClick={() =>
                                 this.handelDisplayUpdateModal(data)
