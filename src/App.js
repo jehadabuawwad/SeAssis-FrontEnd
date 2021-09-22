@@ -10,10 +10,12 @@ import { Row, Col, Container } from 'react-bootstrap';
 import '../src/stylesheet.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import DetectOS from './components/DetectOS';
 export default class App extends Component {
   render() {
     return (
       <div>
+        <DetectOS/>
         <Header />
         <Router>
           <Container>
