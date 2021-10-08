@@ -7,7 +7,6 @@ require('dotenv').config();
 export default class Feedback extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       Feedbacks: [],
     };
@@ -23,20 +22,19 @@ export default class Feedback extends Component {
     };
     axios
       .post(`${process.env.REACT_APP_SERVER}/feedback`, reqBody)
-      .then((creatFeedbackObject) => {
-        this.state.Feedbacks.push(creatFeedbackObject.data);
+      .then((createResponse) => {
+        this.state.Feedbacks.push(createResponse.data);
         this.setState({ Feedbacks: this.state.Feedbacks });
         this.handelDisplayAddModal();
       })
       .catch((error) => console.log(error));
   };
-
   componentDidMount = () => {
     axios
       .get(`${process.env.REACT_APP_SERVER}/feedback`)
 
-      .then((FeedbacksResponse) => {
-        this.setState({ Feedbacks: FeedbacksResponse.data });
+      .then((readResponse) => {
+        this.setState({ Feedbacks: readResponse.data });
       })
       .catch((error) => console.log(error));
   };
