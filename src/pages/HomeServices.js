@@ -1,24 +1,33 @@
 import React, { Component } from 'react';
-import HomeServiceContent from '../components/HomeServiceContent';
-import HomeServiceForm from '../components/HomeServiceForm';
 import axios from 'axios';
 require('dotenv').config();
+
+import HomeServiceContent from '../components/HomeServiceContent';
+import HomeServiceForm from '../components/HomeServiceForm';
+import MessageModal from '../components/MessageModal';
+
+const REACT_APP_IQ_URL = process.env.REACT_APP_IQ_URL;
+const REACT_APP_IQ_KEY = process.env.REACT_APP_IQ_KEY;
+
 class HomeServices extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       serviceData: [],
       location: [],
       MapOfLocation: '',
+      modalShow: false,
     };
   }
+  handleModalShow = () => {
+    this.setState({ modalShow: !this.state.modalShow });
+  };
   HandleLocation = async () => {
     await navigator.geolocation.getCurrentPosition((position) => {
       this.setState({
         location: [position.coords.latitude, position.coords.longitude],
       });
-      const url1 = `https://maps.locationiq.com/v3/staticmap?key=pk.cbecb2703474c628d6f82047cd751d62&zoom=18&center=${this.state.location}&format=jpg`;
+      const url1 = `${REACT_APP_IQ_URL}?key=${REACT_APP_IQ_KEY}&zoom=18&center=${this.state.location}&format=jpg`;
       axios.get(url1).then((mapResponse) => {
         this.setState({ MapOfLocation: mapResponse.request.responseURL });
       });
@@ -27,21 +36,19 @@ class HomeServices extends Component {
   HandleCreateHomeService = (e) => {
     e.preventDefault();
     const helpBody = {
-      Pesron_Name: e.target.personName.value,
-      Pesron_Addres: e.target.personAddress.value,
-      Pesron_Phone: e.target.personPhone.value,
-      Person_Description: e.target.Description.value,
+      Pesron_Name: e.target.Pesron_Name.value,
+      Person_Description: e.target.Person_Description.value,
+      Pesron_Phone: e.target.Pesron_Phone.value,
+      Pesron_Address: e.target.Pesron_Address.value,
       map: this.state.MapOfLocation,
     };
-    console.log('helpbody', helpBody);
     axios
       .post(`${process.env.REACT_APP_SERVER}/services`, helpBody)
-      .then((createdService) => {
-        this.state.serviceData.push(createdService.data);
+      .then((createResponse) => {
+        this.state.serviceData.push(createResponse.data);
         this.setState({ serviceData: this.state.serviceData });
       });
-    window.location.reload();
-    alert('the help on the way');
+    this.handleModalShow();
   };
   render() {
     return (
@@ -50,6 +57,10 @@ class HomeServices extends Component {
         <HomeServiceForm
           HandleCreateHomeService={this.HandleCreateHomeService}
           HandleLocation={this.HandleLocation}
+        />
+        <MessageModal
+          modalShow={this.state.modalShow}
+          handleModalShow={this.handleModalShow}
         />
       </>
     );

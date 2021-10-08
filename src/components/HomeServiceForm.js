@@ -20,7 +20,7 @@ class HomeServiceForm extends Component {
                 <Form.Label>Name</Form.Label>
                 <Form.Control
                   type='text'
-                  name='personName'
+                  name='Pesron_Name'
                   placeholder='Enter your name'
                 />
               </Form.Group>
@@ -34,7 +34,7 @@ class HomeServiceForm extends Component {
                 <Form.Label>City</Form.Label>
                 <Form.Control
                   as='select'
-                  name='personAddress'
+                  name='Pesron_Address'
                   onChange={this.props.HandleLocation}
                 >
                   <option>Choose your city</option>
@@ -61,7 +61,7 @@ class HomeServiceForm extends Component {
                 <Form.Label>Phone Number</Form.Label>
                 <Form.Control
                   type='number'
-                  name='personPhone'
+                  name='Pesron_Phone'
                   placeholder='Add Your Phone'
                 />
               </Form.Group>
@@ -72,7 +72,7 @@ class HomeServiceForm extends Component {
               <Form.Label>Problem Description</Form.Label>
               <Form.Control
                 style={{ height: 200 }}
-                name='Description'
+                name='Person_Description'
                 type='text'
                 placeholder='Add A Description To The Issue'
               />

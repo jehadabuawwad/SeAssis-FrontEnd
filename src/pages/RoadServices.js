@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
+import axios from 'axios';
+require('dotenv').config();
+
 import RoadServiceContent from '../components/RoadServiceContent';
 import RoadServiceForm from '../components/RoadServiceForm';
-import axios from 'axios';
-import Alert from 'react-bootstrap/Alert';
+import MessageModal from '../components/MessageModal';
+
+const REACT_APP_IQ_URL = process.env.REACT_APP_IQ_URL;
+const REACT_APP_IQ_KEY = process.env.REACT_APP_IQ_KEY;
+
 class RoadServices extends Component {
   constructor(props) {
     super(props);
@@ -10,46 +16,41 @@ class RoadServices extends Component {
       serviceData: [],
       location: [],
       MapOfLocation: '',
-      showAlert: false,
+      modalShow: false,
     };
   }
+  handleModalShow = () => {
+    this.setState({ modalShow: !this.state.modalShow });
+  };
   HandleLocation = async () => {
     await navigator.geolocation.getCurrentPosition((position) => {
       this.setState({
         location: [position.coords.latitude, position.coords.longitude],
       });
 
-      const url1 = `https://maps.locationiq.com/v3/staticmap?key=pk.cbecb2703474c628d6f82047cd751d62&zoom=18&center=${this.state.location}&format=jpg`;
-      axios.get(url1).then((mapResponse) => {
+      const url2 = `${REACT_APP_IQ_URL}?key=${REACT_APP_IQ_KEY}&zoom=18&center=${this.state.location}&format=jpg`;
+      axios.get(url2).then((mapResponse) => {
         this.setState({ MapOfLocation: mapResponse.request.responseURL });
       });
     });
-    console.log('halalalaldjdkkd');
   };
-
-  HandleCreateService = (e) => {
+  HandleCreateRoadService = (e) => {
     e.preventDefault();
     const helpBody = {
-      Pesron_Name: e.target.personName.value,
-      Pesron_Addres: e.target.personAddress.value,
-      Pesron_Phone: e.target.personPhone.value,
-      Person_Description: e.target.Description.value,
+      Pesron_Name: e.target.Pesron_Name.value,
+      Person_Description: e.target.Person_Description.value,
+      Pesron_Phone: e.target.Pesron_Phone.value,
+      Pesron_Address: e.target.Pesron_Address.value,
       map: this.state.MapOfLocation,
     };
-    console.log('helpbody', helpBody);
-    console.log('ho');
     axios
       .post(`${process.env.REACT_APP_SERVER}/services`, helpBody)
-      .then((createdService) => {
-        this.state.serviceData.push(createdService.data);
+      .then((createResponse) => {
+        this.state.serviceData.push(createResponse.data);
         this.setState({ serviceData: this.state.serviceData });
       });
-    window.location.reload();
-    this.setState({
-      showAlert: true,
-    });
+    this.handleModalShow();
   };
-
   render() {
     console.log(this.state.showAlert);
     return (
@@ -61,8 +62,12 @@ class RoadServices extends Component {
         )}
         <RoadServiceContent />
         <RoadServiceForm
-          HandleCreateService={this.HandleCreateService}
+          HandleCreateRoadService={this.HandleCreateRoadService}
           HandleLocation={this.HandleLocation}
+        />
+        <MessageModal
+          modalShow={this.state.modalShow}
+          handleModalShow={this.handleModalShow}
         />
       </>
     );

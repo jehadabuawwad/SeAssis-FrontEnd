@@ -9,7 +9,7 @@ export default class RoadServiceForm extends Component {
     // console.log(this.props);
     return (
       <div class='border border-warning' style={{ borderRadius: '15px' }}>
-        <Form onSubmit={this.props.HandleCreateService}>
+        <Form onSubmit={this.props.HandleCreateRoadService}>
           <Row className='mb-3'>
             <Col>
               <Form.Group
@@ -20,7 +20,7 @@ export default class RoadServiceForm extends Component {
                 <Form.Label>Name</Form.Label>
                 <Form.Control
                   type='text'
-                  name='personName'
+                  name='Pesron_Name'
                   placeholder='Enter your name'
                 />
               </Form.Group>
@@ -29,12 +29,12 @@ export default class RoadServiceForm extends Component {
               <Form.Group
                 className='mb-3'
                 controlId='formBasicPassword'
-                onClick={this.props.HandleLocationHandleLocation}
+                onClick={this.props.HandleLocation}
               >
                 <Form.Label>City</Form.Label>
                 <Form.Control
                   as='select'
-                  name='personAddress'
+                  name='Pesron_Address'
                   onChange={this.props.HandleLocation}
                 >
                   <option>Choose your city</option>
@@ -61,7 +61,7 @@ export default class RoadServiceForm extends Component {
                 <Form.Label>Phone Number</Form.Label>
                 <Form.Control
                   type='number'
-                  name='personPhone'
+                  name='Pesron_Phone'
                   placeholder='Add Your Phone'
                 />
               </Form.Group>
@@ -72,7 +72,7 @@ export default class RoadServiceForm extends Component {
               <Form.Label>Problem Description</Form.Label>
               <Form.Control
                 style={{ height: 200 }}
-                name='Description'
+                name='Person_Description'
                 type='text'
                 placeholder='Add A Description To The Issue'
               />
