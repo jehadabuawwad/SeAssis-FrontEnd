@@ -36,6 +36,7 @@ class HomeServices extends Component {
   HandleCreateHomeService = (e) => {
     e.preventDefault();
     const helpBody = {
+      Pesron_Email: e.target.Pesron_Email.value,
       Pesron_Name: e.target.Pesron_Name.value,
       Person_Description: e.target.Person_Description.value,
       Pesron_Phone: e.target.Pesron_Phone.value,

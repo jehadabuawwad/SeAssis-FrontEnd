@@ -66,6 +66,19 @@ export default class RoadServiceForm extends Component {
                 />
               </Form.Group>
             </Col>
+            <Col md={{ span: 3, offset: 0 }}>
+              <Form.Group
+                controlId='formGridZip'
+                style={{ marginRight: '15px' }}
+              >
+                <Form.Label>Email</Form.Label>
+                <Form.Control
+                  type='email'
+                  name='Pesron_Email'
+                  placeholder='Add Your Email'
+                />
+              </Form.Group>
+            </Col>
           </Row>
           <Col>
             <Form.Group className='mb-3' controlId='formBasicCheckbox'>
