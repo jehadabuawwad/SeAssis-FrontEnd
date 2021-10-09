@@ -13,25 +13,25 @@ export default class FeedbackSlider extends Component {
       <>
         {this.props.Feedbacks.length ? (
           <Row>
-            <Col md={{ span: 0, offset: 0 }}>
-              <Carousel itemsToShow={this.props.Feedbacks.length}>
+            <Col xs={{ span: 1, offset: 0 }} lg={{ span: 0, offset: 3 }}>
+              <Carousel style={{ width: 500, height: 500 ,marginBottom:50}} itemsToShow={this.props.Feedbacks.length}>
                 {this.props.Feedbacks.map((element) => {
                   return (
-                    <Carousel.Item interval={3000}>
+                    <Carousel.Item style={{ width: 'auto', height: 'auto' }} >
                       <img
                         className='d-block w-100'
                         src='https://images.unsplash.com/photo-1531824475211-72594993ce2a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80'
                         rounded
-                        style={{ height: 600, width: 300 }}
+                        style={{ height: 550, width: 300 }}
                       />
                       <Carousel.Caption
                         style={{
                           color: 'white',
-                          marginLeft: '45%',
+                          marginLeft: '-40%',
                           marginBottom: '15%',
                         }}
                       >
-                        <p style={{ fontSize: 35, marginBottom: '-10%' }}>
+                        <p style={{ fontSize: 25, marginBottom: '0%' }}>
                           User Experince
                         </p>
                         <div>
@@ -49,17 +49,18 @@ export default class FeedbackSlider extends Component {
                             </p>
                           )}
                         </div>
-                        <p style={{ marginTop: '-10%' }}>
+                        <p style={{ marginBottom: '20%' }}>
                           With Percantage {Math.abs(element.pospol[1]) * 100}%
                         </p>
                       </Carousel.Caption>
                       <Carousel.Caption
                         style={{
                           color: 'white',
-                          fontSize: 40,
-                          marginBottom: '14%',
-                          marginLeft: '-5%',
+                          fontSize: 25,
+                          marginBottom: '-5%',
+                          marginLeft: '-15%',
                           width: 500,
+                          height:350,
                         }}
                       >
                         <h3>{element.name}</h3>

@@ -6,10 +6,10 @@ export default class AboutUsCard extends Component {
   render() {
     return (
       <Row>
-        <h1 style={{ color: 'black' }}>Our Team Mates</h1>
-        <Col style={{ marginBottom: 25 }} md={{ span: 0, offset: 0 }}>
+        <h1 style={{ color: 'white' }}>Our Team Mates</h1>
+        <Col style={{ marginBottom: 10 }} xs={{span:12,offset:0}}md={{ span: 12, offset: 3 }}>
           <Card
-            style={{ width: '100%', marginLeft: 'auto', marginRight: 'auto' }}
+            style={{ width: 525, marginLeft: -25, marginRight: 'auto' }}
           >
             <Card.Img variant='top' src={Team} />
             <Card.Body>

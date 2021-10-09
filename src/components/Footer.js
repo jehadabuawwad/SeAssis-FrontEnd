@@ -1,53 +1,35 @@
 import React, { Component } from 'react';
-import { Navbar, Col, Row } from 'react-bootstrap';
+import { Row, Col, Navbar } from 'react-bootstrap';
+
 export default class Footer extends Component {
   render() {
     return (
-      <Row fluid style={{ marginTop: 50 }}>
-        <Col md={{ span: 0, offset: 0 }}>
+      <Row>
+        <Col xs={{ span: 12, offset: 2 }} md={{ span: 0, offset: 0 }}>
           <Navbar
-            expand='lg'
+            fixed='bottom'
             style={{
               backgroundColor: '#343F56',
-              margin: '-1%',
-              height: 120,
+              height: 100,
+              paddingTop:25,
             }}
-            expand='lg'
             variant='dark'
           >
-            <Navbar.Brand
-              style={{
-                marginRight: '47%',
-              }}
+            <Col
+              xs={{ span: 5, offset: 0 }}
+              md={{ span: 7, offset: 1 }}
+              style={{ color: 'white' }}
             >
-              <p style={{ fontSize: '25px', height: 50, padding: 10 }}>
-                Code Vibes Developer&copy; 2021
-              </p>
-            </Navbar.Brand>
-            <Navbar.Brand href='/Feedback'>Feedback</Navbar.Brand>
-            <Navbar.Brand href='/AboutUs'>About Us</Navbar.Brand>
-            <Navbar.Brand>
-              <p
-                style={{
-                  marginLeft: 40,
-                  fontSize: '20px',
-                  height: 15,
-                  padding: 10,
-                }}
-              >
-                Email: SeAssis@outlook.com
-              </p>
-              <p
-                style={{
-                  marginLeft: 40,
-                  fontSize: '20px',
-                  height: 15,
-                  padding: 10,
-                }}
-              >
-                Contact Us: +962 78 7002130
-              </p>
-            </Navbar.Brand>
+              <p>Code Vibes Developer&copy; 2021</p>
+            </Col>
+            <Col
+              xs={{ span: 12, offset: 2 }}
+              md={{ span: 2, offset: 2 }}
+              style={{ color: 'white' }}
+            >
+              <p>Email: SeAssis@outlook.com</p>
+              <p>Contact Us: +962 78 7002130</p>
+            </Col>
           </Navbar>
         </Col>
       </Row>

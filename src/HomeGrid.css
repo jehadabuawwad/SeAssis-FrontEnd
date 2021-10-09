@@ -3,14 +3,13 @@
 * {
   font-family: 'Righteous', cursive;
   padding: 5px;
-  box-sizing: border-box;
-
 }
 
 .card1 {
   position: relative;
   width: 500px;
   height: 600px;
+
 }
 .box1 {
   position: absolute;

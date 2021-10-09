@@ -95,7 +95,7 @@ class Requests extends Component {
                 return (
                   <>
                     <Col md={3}>
-                      <Card style={{ width: '18rem' }}>
+                      <Card style={{ width: '18rem' ,marginTop:50}}>
                         <Card.Img variant='top' src={data.map} />
                         <div class='border border-warning'>
                           <Card.Body>
