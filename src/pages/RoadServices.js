@@ -52,7 +52,6 @@ class RoadServices extends Component {
     this.handleModalShow();
   };
   render() {
-    console.log(this.state.showAlert);
     return (
       <>
         {this.state.showAlert && (
