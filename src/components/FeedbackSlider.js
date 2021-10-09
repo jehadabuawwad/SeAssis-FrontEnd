@@ -31,7 +31,9 @@ export default class FeedbackSlider extends Component {
                           marginBottom: '15%',
                         }}
                       >
-                        <p style={{  fontSize: 35,marginBottom:'-10%' }}>User Experince</p>
+                        <p style={{ fontSize: 35, marginBottom: '-10%' }}>
+                          User Experince
+                        </p>
                         <div>
                           {element.pospol[0] === 'positive'
                             ? (this.state.isPostive = true)
@@ -47,7 +49,7 @@ export default class FeedbackSlider extends Component {
                             </p>
                           )}
                         </div>
-                        <p style={{marginTop:'-10%'}}>
+                        <p style={{ marginTop: '-10%' }}>
                           With Percantage {Math.abs(element.pospol[1]) * 100}%
                         </p>
                       </Carousel.Caption>
@@ -57,7 +59,7 @@ export default class FeedbackSlider extends Component {
                           fontSize: 40,
                           marginBottom: '14%',
                           marginLeft: '-5%',
-                          width:500
+                          width: 500,
                         }}
                       >
                         <h3>{element.name}</h3>
