@@ -13,17 +13,13 @@ export default class FeedbackForm extends Component {
               borderRadius: '15px',
               backgroundColor: 'whitesmoke',
               marginBottom: 100,
-              marginTop:50
+              marginTop: 50,
             }}
           >
             <Form onSubmit={this.props.handelCreateFeedback}>
               <Row className='mb-3'>
                 <Col md={{ span: 3, offset: 0 }}>
-                  <Form.Group
-                    className='mb-3'
-                    controlId='formBasicEmail'
-                   
-                  >
+                  <Form.Group className='mb-3' controlId='formBasicEmail'>
                     <Form.Label>Name</Form.Label>
                     <Form.Control
                       type='text'
@@ -103,52 +99,3 @@ export default class FeedbackForm extends Component {
     );
   }
 }
-
-// <Container>
-//   <Row>
-//     {/* <Col md={{ span: 8, offset: 2 }}> */}
-//     <Form style={{ marginTop: '9%' }} onSubmit={this.props.handelCreateFeedback}>
-//       <Form.Group style={secStyle} className='mb-3'>
-//         <Form.Label>Name</Form.Label>
-//         <Form.Control name='name' placeholder='Enter Your Name' />
-//       </Form.Group>
-//       <Form.Group style={mystyle} className='mb-3' >
-//         <Form.Label>Email address</Form.Label>
-//         <Form.Control
-
-//           name='email'
-//           placeholder='Enter Your Email Address'
-//         />
-
-//       </Form.Group>
-
-//       <Form.Group style={numStyle} className='mb-3'>
-//         <Form.Label>Mobile Number</Form.Label>
-//         <Form.Control
-//           name='mobile'
-//           placeholder='Enter Your Mobile Number'
-//         />
-//       </Form.Group>
-//       <Form.Group style={servicestyle} className='mb-3'>
-//         <Form.Label>Service Type</Form.Label>
-//         <Form.Control
-//           name='serviceType'
-//           placeholder='Enter Your Service Type'
-//         />
-//       </Form.Group>
-//       <Form.Group style={{ marginTop: '25%', width: '61%', marginLeft: '17%' }} className='mb-3'>
-//         <Form.Label>Feedback</Form.Label>
-//         <Form.Control
-
-//           style={{ height: 100 }}
-//           name='feedback'
-//           placeholder='Enter Your Feedback'
-//         />
-//       </Form.Group>
-//       <Button style={{ marginLeft: '44%' }} variant='warning' type='submit'>
-//         Submit
-//       </Button>
-//     </Form>
-//     {/* </Col> */}
-//   </Row>
-// </Container >
