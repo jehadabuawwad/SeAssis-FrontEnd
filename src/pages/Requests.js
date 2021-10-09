@@ -89,7 +89,7 @@ class Requests extends Component {
           </>
         )}
         <>
-          <Row>
+          <Row style={{marginBottom:50}}>
             {this.state.services.length > 0 &&
               this.state.services.map((data) => {
                 return (

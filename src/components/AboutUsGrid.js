@@ -17,7 +17,7 @@ export default class AboutUsGrid extends Component {
             <Col md={{ span: 4, offset: 0 }}>
               <div class='card2'>
                 <div class='box2'>
-                  <div style={{ width: 400 }} class='content2'>
+                  <div style={{ width: 450 }} class='content2'>
                     <Image
                       className='d-block w-100'
                       src={JehadImage}

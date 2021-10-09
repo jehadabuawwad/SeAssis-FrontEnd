@@ -8,7 +8,7 @@ export default class HomeSlider extends Component {
   render() {
     return (
       <Col xs={{ span: 1, offset: 0 }} lg={{ span: 0, offset: 3 }}>
-        <Carousel variant='dark' style={{ width: 500, height: 500 ,marginBottom:50}}>
+        <Carousel variant='dark' style={{ width: 485, height: 500 ,marginBottom:50}}>
           <Carousel.Item style={{ width: 'auto', height: 'auto' }}>
             <Image
               style={{ height: 500 }}
@@ -17,7 +17,7 @@ export default class HomeSlider extends Component {
               alt='First slide'
             />
             <Carousel.Caption
-              style={{ color: 'white', fontSize: 35, marginLeft: '-28%' }}
+              style={{ color: 'white', fontSize: 35, marginLeft: '-35%' }}
             >
               <p>Get Help on Road</p>
             </Carousel.Caption>

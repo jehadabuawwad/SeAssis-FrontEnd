@@ -6,7 +6,7 @@ export default class FeedbackForm extends Component {
   render() {
     return (
       <Row>
-        <Col xs={{ span: 12, offset: 1 }} md={{ span: 12, offset: 0 }}>
+        <Col xs={{ span: 12, offset: 0 }} md={{ span: 12, offset: 0 }}>
           <div
             class='border border-warning'
             style={{

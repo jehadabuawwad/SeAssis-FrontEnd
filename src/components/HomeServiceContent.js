@@ -11,13 +11,13 @@ export default class HomeServiceContent extends Component {
             <Col xs={{ span: 3, offset: 0 }} md={{ span: 4, offset: 1 }}>
               <img
                 src='https://cdn-colla.nitrocdn.com/aGOFLQWREmkPcEuaJpGePQetRgHRrvYU/assets/static/optimized/rev-1e5b529/wp-content/uploads/2018/08/on-demand-home-services-main.jpg'
-                width='500px'
+                width='450px'
                 height='300px'
                 style={{borderRadius: '20px'}}
               />
             </Col>
             <Col
-              xs={{ span: 12, offset: 2 }}
+              xs={{ span: 12, offset: 0 }}
               md={{ span: 4, offset: 2 }}
               style={{ textAlign: 'center', padding: 30 }}
             >
@@ -36,13 +36,13 @@ export default class HomeServiceContent extends Component {
             <Col xs={{ span: 4, offset: 0 }} md={{ span: 4, offset: 1 }}>
               <img
                 src='https://img2.chinadaily.com.cn/images/201902/26/5c7495a8a3106c65fffbd6f8.jpeg'
-                width='500px'
+                width='450px'
                 height='300px'
                 style={{borderRadius: '20px'}}
               />
             </Col>
             <Col
-              xs={{ span: 12, offset: 2 }}
+              xs={{ span: 12, offset: 0 }}
               md={{ span: 4, offset: 2 }}
               style={{ textAlign: 'center', padding: 50 }}
             >
@@ -59,13 +59,13 @@ export default class HomeServiceContent extends Component {
             <Col xs={{ span: 2, offset: 0 }} md={{ span: 4, offset: 1 }}>
               <img
                 src='http://jungleworks.com/wp-content/uploads/2018/02/yourstory-plumbers.jpg'
-                width='500px'
+                width='450px'
                 height='300px'
                 style={{borderRadius: '20px'}}
               />
             </Col>
             <Col
-              xs={{ span: 12, offset: 2 }}
+              xs={{ span: 12, offset: 0 }}
               md={{ span: 4, offset: 2 }}
               style={{ textAlign: 'center', padding: 50 }}
             >

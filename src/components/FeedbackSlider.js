@@ -14,7 +14,7 @@ export default class FeedbackSlider extends Component {
         {this.props.Feedbacks.length ? (
           <Row>
             <Col xs={{ span: 1, offset: 0 }} lg={{ span: 0, offset: 3 }}>
-              <Carousel style={{ width: 500, height: 500 ,marginBottom:50}} itemsToShow={this.props.Feedbacks.length}>
+              <Carousel style={{ width: 500, height: 500 ,marginBottom:50,marginLeft:-25}} itemsToShow={this.props.Feedbacks.length}>
                 {this.props.Feedbacks.map((element) => {
                   return (
                     <Carousel.Item style={{ width: 'auto', height: 'auto' }} >

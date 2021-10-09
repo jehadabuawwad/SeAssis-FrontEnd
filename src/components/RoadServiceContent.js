@@ -11,7 +11,7 @@ export default class RoadServiceContent extends Component {
         <Container style={{ color: 'white', marginTop: 50 }}>
           <Row>
             <Col
-              xs={{ span: 12, offset: 1 }}
+              xs={{ span: 12, offset: 0 }}
               md={{ span: 4, offset: 1 }}
               style={{ textAlign: 'center', padding: 30 }}
             >
@@ -26,7 +26,7 @@ export default class RoadServiceContent extends Component {
             <Col xs={{ span: 4, offset: 0 }} md={{ span: 4, offset: 1 }}>
               <img
                 src='https://media.istockphoto.com/vectors/roadside-assistance-vector-id628095858'
-                width='500px'
+                width='450px'
                 height='300px'
                 style={{borderRadius: '20px'}}
               />
@@ -35,7 +35,7 @@ export default class RoadServiceContent extends Component {
 
           <Row>
             <Col
-              xs={{ span: 12, offset: 1 }}
+              xs={{ span: 12, offset: 0 }}
               md={{ span: 4, offset: 1 }}
               style={{ textAlign: 'center', padding: 30 }}
             >
@@ -48,7 +48,7 @@ export default class RoadServiceContent extends Component {
             <Col xs={{ span: 4, offset: 0 }} md={{ span: 4, offset: 1 }}>
               <img
                 src='https://dealerimages.dealereprocess.com/image/upload/w_2136/1544533.jpg'
-                width='500px'
+                width='450px'
                 height='300px'
                 style={{borderRadius: '20px'}}
               />
@@ -56,7 +56,7 @@ export default class RoadServiceContent extends Component {
           </Row>
           <Row>
             <Col
-              xs={{ span: 12, offset: 1 }}
+              xs={{ span: 12, offset: 0 }}
               md={{ span: 4, offset: 1 }}
               style={{ textAlign: 'center', padding: 30 }}
             >
@@ -71,7 +71,7 @@ export default class RoadServiceContent extends Component {
             <Col xs={{ span: 4, offset: 0 }} md={{ span: 4, offset: 1 }}>
               <img
                 src='https://aaaliving.acg.aaa.com/wp-content/uploads/2019/04/aaa-roadside-assistance-benefits-mobile.jpg'
-                width='500px'
+                width='450px'
                 height='300px'
                 style={{borderRadius: '20px'}}
               />

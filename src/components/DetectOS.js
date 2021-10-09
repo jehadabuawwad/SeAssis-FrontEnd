@@ -17,7 +17,7 @@ function getOS() {
     document.body.style.zoom = 0.8;
   } else if (/Android/.test(userAgent)) {
     os = 'Android';
-    document.body.style.zoom = 0.80;
+    document.body.style.zoom = 0.75;
   } else if (!os && /Linux/.test(platform)) {
     os = 'Linux';
     document.body.style.zoom = 1.1;
